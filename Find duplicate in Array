@@ -1,0 +1,10 @@
+#include <bits/stdc++.h> 
+int findDuplicate(vector<int> &arr, int n){
+    unordered_set<int> seen;
+        for (auto &n : arr) {
+            if (seen.count(n))
+                return n;
+            seen.insert(n);
+}
+    return -1;
+}
